@@ -1,0 +1,8 @@
+<div class="help">
+  <h2 class="tituloA">Inspeccion de Vehiculos</h2>
+  <button class="btn-submit" (click)="openAddModal()">Agregar Inspección</button>
+  <app-table></app-table>
+
+  <!-- Renderiza el componente ModalAgregarComponent si isModalOpen es true -->
+  <app-modalagregar *ngIf="isModalOpen" (closeModal)="closeAddModal()" ></app-modalagregar>
+</div>
